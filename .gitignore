@@ -1,0 +1,35 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+
+# Environment variables
+.env
+.env.production
+
+# Django migrations (optional, can include or exclude)
+*/migrations/*.pyc
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# SQLite database
+*.sqlite3
+
+# Media uploads
+media/
+
+# Static files
+staticfiles/
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Keep important config files in repo
+!.gitignore
