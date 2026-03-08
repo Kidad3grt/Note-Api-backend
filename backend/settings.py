@@ -21,7 +21,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", 'django-insecure-w-oexqba7r&!#6u*&(iws0^gbf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -144,5 +144,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://effulgent-maamoul-b93fdd.netlify.app/"
+]
 CORS_ALLOWS_CREDENTIALS = True
+
