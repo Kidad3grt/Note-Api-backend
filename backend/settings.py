@@ -145,7 +145,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
-    "https://effulgent-maamoul-b93fdd.netlify.app/"
+    "https://effulgent-maamoul-b93fdd.netlify.app"
 ]
+
 CORS_ALLOWS_CREDENTIALS = True
 
